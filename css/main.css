@@ -72,12 +72,15 @@ nav div{
 nav ul{
     list-style: none;
     text-align: right;
+    padding:10px;
 }
 nav ul li{
     display: inline-block;
+    padding:5px 0px;
+    margin:0 5px;
 }
 nav ul li a{
-    padding:20px;
+    padding:5px 15px;
     display: block;
 }
 .works{
@@ -867,6 +870,318 @@ p.container{
 .mobile-menu{
     display: none;
 }
+.flip{
+    position: relative;
+    width:80%;
+    height:80%;
+    perspective: 1000px;
+    
+}
+/* Hover Effects */
+/* Home Page Testimonials */
+.testimonials{
+    height:300px;
+}
+.front,.back{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    transition:1s;
+    overflow:hidden;
+}
+.front{
+    transform: rotateY(0deg);
+}
+.back{
+    transform: rotateY(180deg);
+    background-color:red;
+}
+.flip:hover .front{
+    transform: rotateY(-180deg)
+}
+.flip:hover .back{
+    transform: rotateY(0deg)
+}
+/* Bounce Effect Home Page */
+.works-content div:hover span{
+    animation-name:bounce;
+    -webkit-animation-name:bounce;
+    -moz-animation-name:bounce;
+    -o-animation-name:bounce;
+    -ms-animation-name:bounce;
+    animation-duration:1s;
+    -webkit-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    -moz-animation-duration:1s;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-4px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@-o-keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-4px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@-ms-keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-4px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@-moz-keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-4px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@-webkit-keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-4px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-3px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* Navbar Hover */
+
+nav ul li::after,nav ul li::before{
+    content:'';
+    display: block;
+    height:2px;
+    background:#00a4e4;
+    transition: 0.5s linear;
+}
+nav ul li{
+    overflow: hidden;
+}
+nav ul li::after{
+    width:0%;
+}
+nav ul li::before{
+    width:100%;
+    transform: translateX(100%);
+}
+nav ul li:hover::before{
+    transform: translateX(0%);
+}
+nav ul li:hover::after{
+    width:100%;
+}
+/* Services Shutter Effect */
+.service-banner article .demo{
+    position: relative;
+    overflow: hidden;
+}
+.service-banner article .demo::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    width:0%;
+    height:0%;
+    background-color: #00a4e4;
+    transition:0.5s linear;
+    z-index:-1;
+}
+.service-banner article .demo:hover::before{
+    width:100%;
+    height:400%;
+}
+.service-banner article .try{
+    position: relative;
+    overflow: hidden;
+}
+.service-banner article .try::before{
+    content:'';
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:-100%;
+    background:linear-gradient(to right, transparent,rgba(255,255,255,0.5),transparent);
+    transition: 2s;
+}
+.service-banner article .try:hover::before{
+    left:100%;
+}
+/* .service-banner article .try{
+    position: relative;
+    overflow: hidden;
+}
+.service-banner article .try::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    width:0%;
+    height:0%;
+    background-color:transparent;
+    z-index:-1;
+    transition: 1s;
+    overflow:hidden;
+}
+.service-banner article .try:hover{
+    transition: 1s;
+    background-color: transparent;
+    color:#00a4e4;
+}
+.service-banner article .try:hover::before{
+    width:100%;
+    height:400%;  
+} */
 @media screen and (max-width:768px)
 {
     .mobile-menu{
@@ -1035,6 +1350,7 @@ p.container{
     .pincode input[type='button']{
         font-size:14px;
     }
+    
 }
 @media screen and (max-width:576px)
 {
