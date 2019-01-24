@@ -55,7 +55,9 @@ img{
     width:100%;
 }
 nav{
-    background:linear-gradient(to right,rgb(0,0,0),rgb(0,0,0),rgba(117,120,126,0.7));
+    /* background:linear-gradient(to right,rgb(0,0,0),rgb(0,0,0),rgba(117,120,126,0.7)); */
+    position: fixed;
+    width:100%;
 }
 nav div{
     display: inline-block;
@@ -82,6 +84,9 @@ nav ul li{
 nav ul li a{
     padding:5px 15px;
     display: block;
+}
+#slider{
+    padding:0;
 }
 .works{
     background-color:#222;
@@ -870,6 +875,9 @@ p.container{
 .mobile-menu{
     display: none;
 }
+
+/* Hover Effects */
+/* Home Page Testimonials */
 .flip{
     position: relative;
     width:80%;
@@ -877,8 +885,6 @@ p.container{
     perspective: 1000px;
     
 }
-/* Hover Effects */
-/* Home Page Testimonials */
 .testimonials{
     height:300px;
 }
@@ -897,7 +903,6 @@ p.container{
 }
 .back{
     transform: rotateY(180deg);
-    background-color:red;
 }
 .flip:hover .front{
     transform: rotateY(-180deg)
@@ -1142,6 +1147,7 @@ nav ul li:hover::after{
 .service-banner article .try{
     position: relative;
     overflow: hidden;
+    transition:2s;
 }
 .service-banner article .try::before{
     content:'';
@@ -1155,6 +1161,25 @@ nav ul li:hover::after{
 }
 .service-banner article .try:hover::before{
     left:100%;
+}
+.service-banner article .try:hover{
+    transform:  perspective(500px) rotateX(25deg);
+}
+.innerDataItem img{
+    transition:1s;
+}
+.innerDataItem:hover img{
+    transform: scale(1.2);
+}
+.product .item figure{
+    overflow:hidden;
+}
+.product .item figure img{
+    transition:1s;
+}
+.product .item figure:hover img{
+    transform: scale(1.2);
+    
 }
 /* .service-banner article .try{
     position: relative;
