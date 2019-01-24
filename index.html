@@ -6,6 +6,7 @@
     <title>GadgetMania | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
    </head>
 <body>
    <nav>
@@ -25,7 +26,21 @@
    </nav>
    
    <section id="slider">
-        <figure>
+        <div class="owl-carousel owl-theme">
+            <div>
+                <img src="images/a2.jpeg" class="abc">
+            </div>
+            <div>
+                    <img src="images/a1.jpeg">
+                </div>
+                <div>
+                        <img src="images/a1.jpeg">
+                    </div>
+                    <div>
+                            <img src="images/a1.jpeg">
+                        </div>
+        </div>
+        <!-- <figure>
             <img src="images/a1.jpeg">
             <figcaption></figcaption>
         </figure>
@@ -44,7 +59,7 @@
         <figure>
             <img src="">
             <figcaption></figcaption>
-        </figure>
+        </figure> -->
    </section>
 
    <section class="works">
@@ -243,5 +258,17 @@
         </section>
    </footer>
 <script src="js/fixedNavbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:1,
+            autoplay:true,
+            autoplayTimeout:2000
+        });
+    })
+</script>
 </body>
 </html>

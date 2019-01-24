@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="logo">
             <h2>WebSite</h2>
         </div><div class="navigation">
@@ -41,15 +41,15 @@
     <section>
         <section class="container">
             <div class="filters">
-                <button>All Products</button>
-                <button>Laptops</button>
-                <button>Mobile Phones</button>
-                <button>Tablets</button>
-                <button>Gaming Consoles</button>
-                <button>Accessories</button>
+                <button id="all">All Products</button>
+                <button id="laptop">Laptops</button>
+                <button id="mobile">Mobile Phones</button>
+                <button id="tablet">Tablets</button>
+                <button id="console">Gaming Consoles</button>
+                <button id="acc">Accessories</button>
             </div>
             <div class="product">
-                <div class="item">
+                <div class="item laptop">
                     <figure>
                         <img src="../images/p1.jpg">
                     </figure>
@@ -73,7 +73,7 @@
                         </div>
                         </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item laptop">
                     <figure>
                         <img src="../images/p2.jpeg">
                     </figure>
@@ -97,7 +97,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item laptop">
                     <figure>
                         <img src="../images/p3.jpg">
                     </figure>
@@ -121,7 +121,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item laptop">
                     <figure>
                         <img src="../images/p4.jpg">
                     </figure>
@@ -145,7 +145,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item mobile">
                     <figure>
                         <img src="../images/p5.jpg">
                     </figure>
@@ -169,7 +169,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item mobile">
                     <figure>
                         <img src="../images/p6.jpg">
                     </figure>
@@ -193,7 +193,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item mobile">
                     <figure>
                         <img src="../images/p7.jpg">
                     </figure>
@@ -217,7 +217,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item mobile">
                     <figure>
                         <img src="../images/p8.jpg">
                     </figure>
@@ -241,7 +241,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item console">
                     <figure>
                         <img src="../images/p13.jpeg">
                     </figure>
@@ -265,7 +265,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item console">
                     <figure>
                         <img src="../images/p14.jpg">
                     </figure>
@@ -289,7 +289,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item console">
                     <figure>
                         <img src="../images/p15.jpg">
                     </figure>
@@ -313,7 +313,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item acc">
                     <figure>
                         <img src="../images/p9.jpg">
                     </figure>
@@ -337,7 +337,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item acc">
                     <figure>
                         <img src="../images/p10.jpg">
                     </figure>
@@ -361,7 +361,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item acc">
                     <figure>
                         <img src="../images/p11.jpg">
                     </figure>
@@ -385,7 +385,7 @@
                                 </div>
                                 </div>
                     </div>
-                </div><div class="item">
+                </div><div class="item acc">
                     <figure>
                         <img src="../images/p12.jpg">
                     </figure>
@@ -459,5 +459,8 @@
              <p>&copy; Company Name All Rights Reserved</p>
          </section>
     </footer>
+    <script src="../js/fixedNav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/filterableGallery.js"></script>
 </body>
 </html>
