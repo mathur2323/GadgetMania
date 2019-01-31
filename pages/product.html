@@ -29,7 +29,7 @@
     <section class="productInfo container">
         <section>
             <figure>
-                <img src="../images/a1.jpeg">
+                <img src="../images/a1.jpeg" id="mainDisplay">
             </figure>
             <div class="tiles">
                 <figure>
@@ -87,12 +87,13 @@
     <section class="container highlights">
         <div>
             <ul>
-                <li>Description</li>
-                <li>Highlights</li>
-                <li>Specifications</li>
+                <li class="probtn active">Description</li>
+                <li class="probtn">Highlights</li>
+                <li class="probtn">Specifications</li>
             </ul>
         </div>
-        <div>
+        <div id="details">
+
             <!-- AJAX Data -->
         </div>
     </section>
@@ -145,6 +146,9 @@
             <p>&copy; Company Name All Rights Reserved</p>
         </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/productData.js"></script>
+    <script src="../js/productImgs.js"></script>
 </body>
 
 </html>

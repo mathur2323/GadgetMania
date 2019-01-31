@@ -91,9 +91,21 @@ nav ul li a{
     position: static;
 }
 #slider{
-    padding:0;
-    
-    
+    padding:0;   
+}
+#description,#highlights,#specifications{
+    color:#eee;
+    border:none;
+    margin:20px 0;
+    font-size:18px;
+}
+.probtn{
+    cursor: pointer;
+}
+.active{
+    color:#eee;
+    background-color: #00a4e4;
+    border-color:#00a4e4!important;
 }
 .owl-carousel{
     height:100vh;
