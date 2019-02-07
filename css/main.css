@@ -1192,7 +1192,7 @@ nav ul li:hover::after{
     left:100%;
 }
 .service-banner article .try:hover{
-    transform:  perspective(500px) rotateX(25deg);
+    /*transform:  perspective(500px) rotateX(25deg);*/
 }
 .innerDataItem img{
     transition:1s;
